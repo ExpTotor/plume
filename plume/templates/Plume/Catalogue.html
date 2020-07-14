@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Plume</title>
-		<link rel="stylesheet" href="{% static 'Plume/css/style.css' %}"/>	
+		<link rel="stylesheet" href="{% static 'plume/css/style.css' %}"/>	
 		<script src="https://code.jquery.com/jquery.js"></script>
 	</head>
     <body>
@@ -16,22 +16,41 @@
 		
 			<div id="Menu">
 			<nav>
-				<ul><li><a href="#"><img src="{% static 'Plume/img/menu_home1.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_home1_over.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_home1.svg' %}'" width="83" height="56" alt="Accueil" />Accueil</a></li>
-					<li><a href="#"><img src="{% static 'Plume/img/menu_planification.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_planification_over.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_planification.svg' %}'" width="83" height="56" alt="Planificateur" />Planificateur</a></li> <!-- Tâches + Séries + Plan de culture + Récoltes Qrop + Volume de production Spécifique -->
-					<li><a href="#"><img src="{% static 'Plume/img/menu_param1.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_param_over1.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_param1.svg' %}'" width="83" height="56" alt="Paramètres_ferme" />Paramètres ferme</a></li> <!-- Prise en compte des spécificités des fermes (planches, ...) -->
-					<li><a href="#"><img src="{% static 'Plume/img/menu_semences.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_semences_over.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_semences.svg' %}'" width="83" height="56" alt="Semences" />Semences</a></li> <!-- Gestion des stocks de semences -->
-					<li><a href="#"><img src="{% static 'Plume/img/menu_fournisseur.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_fournisseur_over.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_fournisseur.svg' %}'" width="83" height="56" alt="Fournisseurs" />Fournisseurs</a></li> <!-- Gestion des fournisseurs et accès à leurs catalogues -->
-					<li><a href="#"><img src="{% static 'Plume/img/menu_distribution.svg' %}" onmouseover="this.src='{% static 'Plume/img/menu_distribution_over.svg' %}'" onmouseout="this.src='{% static 'Plume/img/menu_distribution.svg' %}'" width="83" height="56" alt="Distributeurs" />Distribution</a></li> <!-- Gestion des distributeurs : AMAP, Marché, distribution locale, ... -->
-					<li><a href="#"><img src="{% static 'Plume/img/menu_gestion.png' %}" onmouseover="this.src='{% static 'Plume/img/menu_gestion_over.png' %}'" onmouseout="this.src='{% static 'Plume/img/menu_gestion.png' %}'" width="83" height="56" alt="Gestion" />Gestion</a></li> <!-- Gestion financière : Bilan, Compte résultat, journal, ... -->
+				<ul><li><a href="#"><img src="{% static 'plume/img/menu_home1.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_home1_over.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_home1.svg' %}'" width="83" height="56" alt="Accueil" />Accueil</a></li>
+					<li><a href="#"><img src="{% static 'plume/img/menu_planification.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_planification_over.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_planification.svg' %}'" width="83" height="56" alt="Planificateur" />Planificateur</a></li> <!-- Tâches + Séries + Plan de culture + Récoltes Qrop + Volume de production Spécifique -->
+					<li><a href="#"><img src="{% static 'plume/img/menu_param1.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_param_over1.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_param1.svg' %}'" width="83" height="56" alt="Paramètres_ferme" />Paramètres ferme</a></li> <!-- Prise en compte des spécificités des fermes (planches, ...) -->
+					<li><a href="Catalogue.html"><img src="{% static 'Plume/img/menu_semences.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_semences_over.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_semences.svg' %}'" width="83" height="56" alt="Semences" />Semences</a></li> <!-- Gestion des stocks de semences -->
+					<li><a href="#"><img src="{% static 'plume/img/menu_fournisseur.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_fournisseur_over.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_fournisseur.svg' %}'" width="83" height="56" alt="Fournisseurs" />Fournisseurs</a></li> <!-- Gestion des fournisseurs et accès à leurs catalogues -->
+					<li><a href="#"><img src="{% static 'plume/img/menu_distribution.svg' %}" onmouseover="this.src='{% static 'plume/img/menu_distribution_over.svg' %}'" onmouseout="this.src='{% static 'plume/img/menu_distribution.svg' %}'" width="83" height="56" alt="Distributeurs" />Distribution</a></li> <!-- Gestion des distributeurs : AMAP, Marché, distribution locale, ... -->
+					<li><a href="#"><img src="{% static 'plume/img/menu_gestion.png' %}" onmouseover="this.src='{% static 'plume/img/menu_gestion_over.png' %}'" onmouseout="this.src='{% static 'plume/img/menu_gestion.png' %}'" width="83" height="56" alt="Gestion" />Gestion</a></li> <!-- Gestion financière : Bilan, Compte résultat, journal, ... -->
 				</ul>
             </nav>
 			</div>
 			
 		<div id="content">
-		xxx
+			<div id="Filtres"> 
+			 <!--<p> Nous sommes le : {{ date }} </p> --> 
+				<p> FILTRES </p>
+			</div>
+			
+			
+			<div id="liste_article">
+			{% for legume in legumes %}
+				<div id="encart_article">
+					<a href="">
+					<img src="{% static 'plume'%}{{ legume.image }} " width="268" height="267"/>
+					<table width="268">
+					<tr>
+						<td><b>{{ legume.title }}</b> - {{ legume.variete }}</td>
+						<td align="right">{{ legume.prix }}</td>						
+					</tr>
+					</table>
+					</a>
+					</br>
+				</div>	
+			{% endfor %} 							
+			</div>
 		</div>
-		
-	</div>
 		
 		<footer>
 			<!-- pour référencement -->

@@ -92,3 +92,31 @@ nav ul li a {
 	background-color:#e1f9ff;
 	font-size: 0.7em;
  }
+ 
+#Filtres
+{ 
+ 	width:1065px;
+	height:200px;
+}
+ 
+  #liste_article
+ {
+	width:1065px;
+	font-size: 0.7em;
+ }
+  
+  #encart_article
+ {
+	float:left;
+	width:350px;
+	font-size: 1.2em;
+ } 
+ 
+ a {
+ color: black; 
+ text-decoration:none;
+ }
+ 
+ a:hover {
+	 color: green;
+ }

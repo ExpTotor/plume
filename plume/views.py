@@ -5,6 +5,10 @@ from django.utils import timezone
 from .models import Legume
 
 def home(request):
-	legumes = Legume.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-	return render(request, 'Plume/Accueil.html', {'date': datetime.now()}, {'legumes': legumes})
+	legumes = Legume.objects.all()
+	return render(request, 'plume/Accueil.html', {'legumes': legumes})#, {'date': datetime.now()})
 	
+	
+def catalogue(request):
+	legumes = Legume.objects.all()
+	return render(request, 'plume/Catalogue.html', {'legumes': legumes})#, {'date': datetime.now()})
