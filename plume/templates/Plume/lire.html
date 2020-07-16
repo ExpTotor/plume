@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,28 +30,9 @@
 			</div>
 			
 		<div id="content">
-			<div id="Filtres"> 
-			 <!--<p> Nous sommes le : {{ date }} </p> --> 
-				<p> FILTRES </p>
-			</div>
-			
-			
-			<div id="liste_article">
-			{% for legume in legumes %}
-				<div id="encart_article">
-					<a href="{% url 'lire' legume.id %}">
-					<img src="{% static 'plume'%}{{ legume.image }} " width="268" height="267"/>
-					<table width="268">
-					<tr>
-						<td><b>{{ legume.title }}</b> - {{ legume.variete }}</td>
-						<td align="right">{{ legume.prix }}</td>						
-					</tr>
-					</table>
-					</a>
-					</br>
-				</div>	
-			{% endfor %} 							
-			</div>
+			<h1>{{ legume.title }} <span class="small">dans {{ legume.variete }}</span></h1>
+			<p class="infos">Rédigé par {{ legume.author }}, le {{ legume.created_date|date:"DATE_FORMAT" }}</p>
+			<div class="contenu">{{ legume.text|linebreaks }}</div>
 		</div>
 		
 		<footer>
